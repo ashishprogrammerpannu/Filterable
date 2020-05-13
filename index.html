@@ -2,57 +2,36 @@
 <html>
 
 <head>
-	<title>Filterable List</title>
+	<title>Friends List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<style>
-		html {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		header {
-			display: flex;
-			width: 400px;
-			margin: auto;
-			align-items: center;
-			flex-direction: column;
-		}
-
-
-		section li:nth-child(even) {
-			background-color: #f5f5f5;
-		}
-
-		section {
-			display: flex;
-			flex-direction: column;
-			margin-top: 20px;
-		}
-
-		li {
-			text-align: center;
-			list-style: none;
-			width: 200px;
-			margin: auto;
-			padding: 10px;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
-
-<body style="font-family: sans-serif;">
-	<header>
-		<h1>Search Down form list </h1>
-		<input type="Search" id="search" placeholder="Search">
-	</header>
+<header>
+	<h1>Your friends List </h1>
+	<input type="Search" id="search" placeholder="Search">
+</header>
+<article>
 	<section class="list">
-		<li id="0">Ashish</li>
-		<li id="1">Ashwin</li>
-		<li id="2">Smith</li>
-		<li id="3">Ajay</li>
-		<li id="4">Aaditya</li>
-		<li id="5">Rahul</li>
+		<li id="0">Ashish <button class="delete">X</button></li>
+		<li id="1">Ashwin <button class="delete">X</button></li>
+		<li id="2">Smith <button class="delete">X</button></li>
+		<li id="3">Ajay <button class="delete">X</button></li>
+		<li id="4">Aaditya <button class="delete">X</button></li>
+		<li id="5">Rahul <button class="delete">X</button></li>
 	</section>
+	<section class="addfriend">
+		<li><input type="text" id="addfriend" placeholder="Type friend Name"><button id="addbtn">Add friend</button>
+		</li>
+	</section>
+</article>
+<footer>
+	<a href="https://www.youtube.com/channel/UCmMk5b4N-ueP2kyYUIVHcrw" class="links"><img src="img/youtube.png"
+			alt="Freakotech"></a>
+	<a href="https://www.facebook.com/pages/category/Education-Website/Freakotech-2360364870859130/" class="links"><img
+			src="img/facebook.png" alt="Freakotech"></a>
+	<a href="" class="links"><img src="img/twitter.png" alt="Freakotech"></a>
+</footer>
 </body>
 <script src="./app.js"></script>
 
